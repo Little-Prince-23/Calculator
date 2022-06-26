@@ -26,38 +26,13 @@ body{
     text-align: center;
 }
 
-/* -------------- H E A D E R -------------- */
-.header{
-    background-color: black;
-    color: white;
-    height: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 3rem 3rem 0 0;
-}
-
-/* T I M E */
-.time{
-    margin-left: 2rem;
-    font-size: 1.5rem;
-}
-
-/* B T N */
-.btn{
-    margin-right: 2rem;
-}
-
-.btn i{
-    margin-right: .5rem;
-}
-
 /* -------------- M A I N -------------- */
 .main{
     background-color: black;
     height: 40%;
     color: white;
     position: relative;
+    border-radius: 3rem 3rem 0 0;
 }
 
 /* S C R E E N */
@@ -109,6 +84,6 @@ body{
 /* -------------- F O O T E R -------------- */
 .footer{
     background-color: gray;
-    height: 50%;
+    height: 60%;
     border-radius: 0 0 3rem 3rem;
 }
