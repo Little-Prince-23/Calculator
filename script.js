@@ -10,6 +10,15 @@ const result = document.querySelector(".result");
 const item = document.querySelectorAll(".item");
 const screen = document.querySelector(".screen");
 
+/* -------------- T R A N S I T I O N -------------- */
+light.style.transition = "all 2s";
+dark.style.transition = "all 2s";
+main.style.transition = "all 2s";
+footer.style.transition = "all 2s";
+included.style.transition = "all 2s";
+result.style.transition = "all 2s";
+screen.style.transition = "all 2s";
+
 /* -------------- E V E N T S -------------- */
 
 //LIGHT MODE
@@ -32,10 +41,12 @@ function dark_mode() {
   screen.style.backgroundColor = "rgb(45, 35, 35";
   light.style.color = "white";
   dark.style.color = "white";
-
+  
+  
   for (let i = 0; i < item.length; i++) {
     item[i].style.backgroundColor = "rgb(39, 20, 20)";
     item[i].style.color = "white";
+    item[i].style.transition = "all 2s";
   }
 
   console.log(`Dark mode active`);
@@ -57,6 +68,7 @@ function light_mode() {
   for (let i = 0; i < item.length; i++) {
     item[i].style.backgroundColor = "white";
     item[i].style.color = "black";
+    item[i].style.transition = "all 2s";
   }
 
   console.log(`Light mode active`);
