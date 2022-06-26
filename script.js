@@ -8,6 +8,7 @@ const footer = document.querySelector(".footer");
 const included = document.querySelector(".included");
 const result = document.querySelector(".result");
 const item = document.querySelectorAll(".item");
+const screen = document.querySelector(".screen");
 
 /* -------------- E V E N T S -------------- */
 
@@ -28,6 +29,9 @@ function dark_mode() {
   included.style.color = "white";
   result.style.color = "white";
   footer.style.backgroundColor = "rgb(45, 35, 35)";
+  screen.style.backgroundColor = "rgb(45, 35, 35";
+  light.style.color = "white";
+  dark.style.color = "white";
 
   for (let i = 0; i < item.length; i++) {
     item[i].style.backgroundColor = "rgb(39, 20, 20)";
@@ -45,6 +49,10 @@ function light_mode() {
   container.style.backgroundColor = "white";
   included.style.color = "black";
   result.style.color = "black";
+  screen.style.backgroundColor = "#E1E1E1";
+  light.style.color = "black";
+  dark.style.color = "black";
+  footer.style.backgroundColor = "#E1E1E1";
 
   for (let i = 0; i < item.length; i++) {
     item[i].style.backgroundColor = "white";
