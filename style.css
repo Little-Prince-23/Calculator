@@ -24,6 +24,7 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: black;
 }
 
 /* -------------- M A I N -------------- */
@@ -52,7 +53,6 @@ body{
     margin-right: 2.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    cursor: pointer;
 }
 
 .screen .dark{
@@ -83,7 +83,26 @@ body{
 
 /* -------------- F O O T E R -------------- */
 .footer{
-    background-color: gray;
+    background-color: rgb(45, 35, 35);
     height: 60%;
-    border-radius: 0 0 3rem 3rem;
+    border-radius: 3rem 3rem 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem 0 2rem 0;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.item{
+    background-color: rgb(39, 20, 20);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    color: white;
+    font-size: 2rem;
 }
