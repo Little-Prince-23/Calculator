@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root{
+    font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* C O N T A I N E R */
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* -------------- H E A D E R -------------- */
+.header{
+    background-color: black;
+    color: white;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3rem 3rem 0 0;
+}
+
+/* T I M E */
+.time{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+
+/* B T N */
+.btn{
+    margin-right: 2rem;
+}
+
+.btn i{
+    margin-right: .5rem;
+}
+
+/* -------------- M A I N -------------- */
+.main{
+    background-color: black;
+    height: 40%;
+    color: white;
+    position: relative;
+}
+
+/* S C R E E N */
+.screen{
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    border-radius: 3rem;
+    width: 10rem;
+    margin-top: 1rem;
+    background-color: rgb(45, 35, 35);
+}
+
+.screen div{
+    margin-right: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.screen .dark{
+    margin-right: 0;
+}
+
+/* C A L C U L A T E     M O N I T O R */
+.calculate-monitor{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+}
+
+.calculate-monitor .included{
+    font-size: 2rem;
+    margin-left: 6rem;
+    margin-bottom: 2.5rem;
+}
+
+.calculate-monitor .result{
+    font-size: 4rem;
+    letter-spacing: .6rem;
+}
+
+
+
+/* -------------- F O O T E R -------------- */
+.footer{
+    background-color: gray;
+    height: 50%;
+    border-radius: 0 0 3rem 3rem;
+}
