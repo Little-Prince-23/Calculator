@@ -85,7 +85,7 @@ body{
 .footer{
     background-color: rgb(45, 35, 35);
     height: 60%;
-    border-radius: 3rem 3rem 3rem 3rem;
+    border-radius: 0 0 3rem 3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -105,4 +105,5 @@ body{
     border-radius: 1.5rem;
     color: white;
     font-size: 2rem;
+    border: 1px solid rgb(39, 20, 20);
 }
