@@ -9,15 +9,12 @@ const included = document.querySelector(".included");
 const result = document.querySelector(".result");
 const item = document.querySelectorAll(".item");
 const screen = document.querySelector(".screen");
+const transitions_effect = document.querySelectorAll(".transition");
 
 /* -------------- T R A N S I T I O N -------------- */
-light.style.transition = "all 2s";
-dark.style.transition = "all 2s";
-main.style.transition = "all 2s";
-footer.style.transition = "all 2s";
-included.style.transition = "all 2s";
-result.style.transition = "all 2s";
-screen.style.transition = "all 2s";
+transition_effect.forEach(function(item){
+  item.style.transition="all 1s"
+})
 
 /* -------------- E V E N T S -------------- */
 
@@ -42,11 +39,10 @@ function dark_mode() {
   light.style.color = "white";
   dark.style.color = "white";
   
-  
   for (let i = 0; i < item.length; i++) {
     item[i].style.backgroundColor = "rgb(39, 20, 20)";
     item[i].style.color = "white";
-    item[i].style.transition = "all 2s";
+    item[i].style.transition = "all 1s";
   }
 
   console.log(`Dark mode active`);
@@ -65,11 +61,38 @@ function light_mode() {
   dark.style.color = "black";
   footer.style.backgroundColor = "#E1E1E1";
 
+
   for (let i = 0; i < item.length; i++) {
     item[i].style.backgroundColor = "white";
     item[i].style.color = "black";
-    item[i].style.transition = "all 2s";
+    item[i].style.transition = "all 1s";
   }
 
   console.log(`Light mode active`);
 }
+
+/* ------------ C A L C U L A T E ----------- */
+
+number_3 = document.querySelector(".num-3");
+number_3.addEventListener("click", function(){
+    included.textContent="3";
+    console.log("3")
+})
+
+number_2 = document.querySelector(".num-2");
+number_2.addEventListener("click", function(a){
+    included.textContent="2";
+    console.log("2")
+})
+
+plus = document.querySelector(".plus");
+plus.addEventListener("click", function(){
+  included.textContent="3";
+  console.log(`+`);
+})
+
+equal = document.querySelector(".equal");
+equal.addEventListener("click", function(){
+  included.textContent="";
+  console.log("=");
+})
