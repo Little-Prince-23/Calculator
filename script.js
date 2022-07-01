@@ -9,12 +9,6 @@ const included = document.querySelector(".included");
 const result = document.querySelector(".result");
 const item = document.querySelectorAll(".item");
 const screen = document.querySelector(".screen");
-const transitions_effect = document.querySelectorAll(".transition");
-
-/* -------------- T R A N S I T I O N -------------- */
-transition_effect.forEach(function(item){
-  item.style.transition="all 1s"
-})
 
 /* -------------- E V E N T S -------------- */
 
